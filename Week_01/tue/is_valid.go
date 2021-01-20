@@ -1,6 +1,5 @@
 package tue
 
-//  lc 20. 有效的括号
 func isValid(s string) bool {
 	// 常见解法，用一个stack 去匹配数据，pop 和 push
 	// string 的每个字符单位是 rune
