@@ -37,7 +37,7 @@ func (this *MinStack) Top() int {
 	return this.stack[len(this.stack)-1]
 }
 
-// 就是比普通stacks 多了衣蛾常数时间复杂度检索出最小元素的api
+// 就是比普通stacks 多了个常数时间复杂度检索出最小元素的api
 func (this *MinStack) GetMin() int {
 	return this.min_s[len(this.min_s)-1]
 }
