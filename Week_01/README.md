@@ -42,6 +42,6 @@
 - [add-first或add-last改写Deque的代码 TODO](./tue/改写Deque的代码.md)
 
 ### 周三学习 Hash Map Set
-- [有效的字母异位词 TODO](./wen/is_anagram.go)
+- [有效的字母异位词](./wen/is_anagram.go)
 - [字母异位词分组 TODO](./wen/group_anagrams.go)
 - [两数之和](./wen/two_sum.go)
