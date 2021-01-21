@@ -2,13 +2,13 @@
 ### [作业完成]
 - BASIC
     - [移动零](./mon/move_zero.go)
-    - [删除排序数组中的重复项]
-    - [旋转数组]
-    - [合并两个有序链表]
-    - [合并两个有序数组]
+    - [删除排序数组中的重复项](./homework/remove_duplicates.go)
+    - [旋转数组](./homework/rotate.go)
+    - [合并两个有序链表](./homework/merge_twoLists.go)
+    - [合并两个有序数组](./homework/merge.go)
     - [两数之和](./wen/two_sum.go)
-    - [加一]
-    - [有效的字母异位词]
+    - [加一](./homework/plus_one.go)
+    - [有效的字母异位词](./wen/is_anagram.go)
 - Medium
     - [设计循环双端队列]
     - [字母异位词分组]
