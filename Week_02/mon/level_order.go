@@ -1,5 +1,7 @@
 package mon
 
+// N 叉树的层序遍历
+
 var res [][]int
 
 func levelOrder(root *Node) [][]int {
