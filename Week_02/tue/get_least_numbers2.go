@@ -2,6 +2,9 @@ package tue
 
 import "container/heap"
 
+// 使用golang 自定义heap 实现-->最大堆
+// 根据最大堆的性质,遍历前k个元素 ,pop即可,注意不是peek ,斗则数据就错了
+//
 func getLeastNumbers(arr []int, k int) []int {
 	var res []int
 	n := len(arr)
