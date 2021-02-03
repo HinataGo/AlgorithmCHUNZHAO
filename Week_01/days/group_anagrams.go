@@ -1,4 +1,4 @@
-package thu
+package days
 
 func groupAnagrams(strs []string) [][]string {
 	mp := map[[26]int][]string{}

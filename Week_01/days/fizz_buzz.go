@@ -1,4 +1,4 @@
-package wen
+package days
 
 import "strconv"
 

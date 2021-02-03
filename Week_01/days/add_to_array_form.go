@@ -1,4 +1,4 @@
-package tue
+package days
 
 func addToArrayForm(A []int, K int) (ans []int) {
 	for i := len(A) - 1; i >= 0; i-- {

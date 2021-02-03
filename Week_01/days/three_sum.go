@@ -1,4 +1,4 @@
-package mon
+package days
 
 import "sort"
 
