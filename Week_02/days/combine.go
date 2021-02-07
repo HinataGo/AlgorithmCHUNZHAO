@@ -17,6 +17,7 @@ func combine(n int, k int) (ans [][]int) {
 			ans = append(ans, comb)
 			return
 		}
+
 		// 考虑选择当前位置
 		temp = append(temp, cur)
 		dfs(cur + 1)

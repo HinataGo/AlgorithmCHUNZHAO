@@ -38,13 +38,14 @@
 - [连通图个数 200. 岛屿数量]
 - [拓扑排序（Topological Sorting）]
 - [最短路径（Shortest Path）：Dijkstra ](https://www.bilibili.com/video/av25829980)
-- [最小生成树（Minimum Spanning Tree）感谢画画酱](https://www.bilibili.com/video/av84820276)
+- [最小生成树（Minimum Spanning Tree）感谢花花酱](https://www.bilibili.com/video/av84820276)
 #### 周三
 - [递归模板&详解]
-- [爬楼梯 70]
-- [括号生成 22]
+- [爬楼梯 70](./wen/climb_stairs.go)
+- [斐波那契数列](./wen/fib.go)
+- [括号生成 22](./wen/generate_parenthesis.go)
 - [翻转二叉树 226]
-- [验证二叉搜索树 98]
+- [验证二叉搜索树 98](wen/is_valid_BST.go)
 - [二叉树的最大深度 104]
 - [二叉树的最小深度 111]
 - [二叉树的序列化与反序列化 297]
@@ -52,7 +53,7 @@
 - [二叉树的最近公共祖先 236]
 - [从前序与中序遍历序列构造二叉树 105]
 - [组合 77]
-- [全排列 46]
+- [全排列 46](./fri/permute.go)
 - [全排列II 47]
 - [34. 二叉树中和为某一值的路径]
 

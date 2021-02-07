@@ -1,6 +1,9 @@
 package mon
 
 // 对求幂的次数进行分治, 随后得出结果
+// 数据转换 n < 0时
+// 再建 一个函数进行递归操作
+// 首先判断 n== 0 则return 1.0
 func myPow(x float64, n int) float64 {
 	// 分治 的 奇偶性情况讨论
 	if n < 0 {

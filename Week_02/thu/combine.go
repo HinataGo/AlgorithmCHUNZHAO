@@ -2,28 +2,34 @@ package thu
 
 // lc 77. 组合
 // 递归实现组合型枚举
-func combine(n int, k int) (ans [][]int) {
-	var temp []int
-	var dfs func(int)
-	dfs = func(cur int) {
-		// 剪枝：temp 长度加上区间 [cur, n] 的长度小于 k，不可能构造出长度为 k 的 temp
-		if len(temp)+(n-cur+1) < k {
-			return
-		}
-		// 记录合法的答案
-		if len(temp) == k {
-			comb := make([]int, k)
-			copy(comb, temp)
-			ans = append(ans, comb)
-			return
-		}
-		// 考虑选择当前位置
-		temp = append(temp, cur)
-		dfs(cur + 1)
-		temp = temp[:len(temp)-1]
-		// 考虑不选择当前位置
-		dfs(cur + 1)
+var ret [][]int
+
+func combine(n int, k int) [][]int {
+	ret = make([][]int, 0)
+	if n <= 0 || k <= 0 || k > n {
+		return ret
 	}
-	dfs(1)
-	return
+	tmp := make([]int, 0)
+	find(n, k, 1, tmp)
+	return ret
+}
+
+// 所有可能的 k 个数的组合
+func find(n, k int, start int, tmp []int) {
+	// 不合法参数
+	if len(tmp) == k {
+		// 这里不能直接append,否则数据错误
+		path := make([]int, len(tmp))
+		copy(path, tmp)
+		ret = append(ret, path)
+		return
+	}
+	// 这里优化 剪枝 最后 i== n的枝丫不需要
+	// n --> n
+	for i := start; i <= n-(k-len(tmp))+1; i++ {
+		tmp = append(tmp, i)
+		find(n, k, i+1, tmp)
+		// 恢复状态
+		tmp = tmp[:len(tmp)-1]
+	}
 }
