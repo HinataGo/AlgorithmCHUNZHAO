@@ -1,4 +1,4 @@
-package wen
+package fri
 
 // 借鉴爬楼梯的优化思路
 // 这里将二维数组转换成一维数组

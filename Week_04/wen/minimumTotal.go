@@ -1,4 +1,4 @@
-package thu
+package wen
 
 /*func minimumTotal(triangle [][]int) int {
     return find(triangle,0,0)

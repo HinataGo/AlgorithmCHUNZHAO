@@ -1,4 +1,4 @@
-package wen
+package thu
 
 // 322. 零钱兑换
 // 及时爬楼梯问题, 这样就很容易了
