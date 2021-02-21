@@ -47,4 +47,5 @@ func helper(r int, bd [][]string, res *[][]string, n int, cols, diag1, diag2 *ma
 			(*diag2)[r-c] = false
 		}
 	}
+
 }
