@@ -1,34 +1,27 @@
 package mon
 
 func maxArea(height []int) int {
-	n := len(height)
-	l, r := 0, n-1
-	if n <= 1 {
-		return 0
-	}
-	res := (r - l) * min(height[l], height[r])
-	for l < r {
-		if height[l] < height[r] {
-			l++
-		} else {
-			r--
+	area := 0
+	l, r := 0, len(height)-1
+	for l != r {
+		hl, hr := height[l], height[r]
+		s := (r - l) * min(hl, hr)
+		if s > area {
+			area = s
 		}
-		tmp := (r - l) * min(height[l], height[r])
-		res = max(tmp, res)
+
+		if hl > hr {
+			r--
+		} else {
+			l++
+		}
 	}
-	return res
+	return area
 }
 
-func max(tmp int, res int) int {
-	if tmp > res {
-		return tmp
+func min(a, b int) int {
+	if a <= b {
+		return a
 	}
-	return res
-}
-
-func min(i int, i2 int) int {
-	if i > i2 {
-		return i2
-	}
-	return i
+	return b
 }
