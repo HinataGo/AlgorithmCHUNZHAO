@@ -12,7 +12,9 @@
 - [LRU 缓存机制](LRU.go)
 - [8. 字符串转换整数 (atoi)](./strings/myAtoi.go)
 - [300. 最长上升子序列](./lengthOfLIS.go)
-- [5. 最长回文子串](./strings/longestPalindrome.go)
+- [5. 最长回文子串 字节必考](./strings/longestPalindrome.go)
+- [438. 找到字符串中所有字母异位词](./findAnagrams.go)
+- [91. 解码方法](./numDecodings.go)
 ### 困难
 
 
